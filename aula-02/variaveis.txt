@@ -1,0 +1,103 @@
+1. JavaScript
+
+1.5. Variáveis e Constantes em JavaScript
+Introdução
+Variáveis e constantes são fundamentais na programação. Elas permitem armazenar e manipular dados de maneira eficiente.
+Em JavaScript, as variáveis podem ser declaradas usando var, let ou const, cada uma com suas próprias características e usos específicos.
+
+Variáveis
+Declaração e Inicialização
+Em JavaScript, uma variável pode ser declarada usando var, let ou const.
+A escolha da palavra-chave afeta o escopo e a mutabilidade da variável.
+
+var: Utilizada desde as primeiras versões de JavaScript. Tem escopo de função ou global, o que pode levar a problemas como hoisting.
+
+var nome = "João";
+let: Introduzida no ECMAScript 6 (ES6). Tem escopo de bloco, o que torna seu comportamento mais previsível e seguro.
+
+let idade = 25;
+Reatribuição de Valores
+As variáveis declaradas com let podem ser reatribuídas.
+
+let cidade = "São Paulo";
+cidade = "Rio de Janeiro"; // Valor atualizado
+Constantes
+Declaração e Inicialização
+Constantes são declaradas usando a palavra-chave const e devem ser inicializadas no momento da declaração.
+Elas não podem ser reatribuídas depois de definidas.
+
+const pi = 3.14159;
+Imutabilidade
+Embora o valor de uma constante não possa ser alterado, se a constante for um objeto ou array, suas propriedades ou elementos podem ser modificados.
+
+const carro = { marca: "Toyota", modelo: "Corolla" };
+carro.modelo = "Camry"; // Permitido
+Sintaxe do JavaScript
+A sintaxe do JavaScript define como os programas devem ser escritos e interpretados. Aqui estão alguns elementos essenciais da sintaxe do JavaScript:
+
+Declaração de Variáveis
+var para declarações de variáveis de escopo global ou de função.
+let para declarações de variáveis de escopo de bloco.
+const para declarações de constantes.
+Estruturas de Controle
+Condicionais: if, else if, else
+Laços de repetição: for, while, do while
+if (condicao) {
+    // bloco de código
+} else {
+    // bloco de código
+}
+for (let i = 0; i < 5; i++) {
+    // bloco de código
+}
+Funções
+Declaração e expressão de funções.
+
+function saudacao(nome) {
+    return `Olá, ${nome}!`;
+}
+const saudacao = function(nome) {
+    return `Olá, ${nome}!`;
+};
+Tipos de Dados do JavaScript
+JavaScript possui vários tipos de dados primitivos e de objetos.
+
+Tipos Primitivos
+String: Cadeia de caracteres.
+
+let texto = "Hello, World!";
+Number: Números inteiros e de ponto flutuante.
+
+let numeroInteiro = 42;
+let numeroDecimal = 3.14;
+Boolean: Valores lógicos (true ou false).
+
+let verdadeiro = true;
+let falso = false;
+Undefined: Uma variável declarada que ainda não foi inicializada.
+
+let indefinido;
+console.log(indefinido); // undefined
+Null: Representa a ausência intencional de um valor.
+
+let vazio = null;
+Symbol: Um valor único e imutável, usado como identificador.
+
+let simbolo = Symbol("descricao");
+Tipos de Objetos
+Object: Coleção de propriedades.
+
+let pessoa = {
+    nome: "Ana",
+    idade: 30
+};
+Array: Lista ordenada de valores.
+
+let frutas = ["maçã", "banana", "laranja"];
+Function: Bloco de código reutilizável.
+
+function soma(a, b) {
+    return a + b;
+}
+Conclusão
+Entender variáveis, constantes e os tipos de dados em JavaScript é essencial para qualquer desenvolvedor. Variáveis permitem armazenar dados que podem mudar, enquanto constantes armazenam dados imutáveis. A sintaxe do JavaScript é flexível e poderosa, permitindo a criação de código eficiente e de fácil manutenção. Com o domínio desses conceitos, você estará bem equipado para enfrentar desafios de programação e desenvolver aplicações robustas.
