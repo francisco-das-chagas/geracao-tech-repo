@@ -3,4 +3,7 @@
 function boasVindas(nome) {
   document.write(`<h1>Olá ${nome}</h1>`);
 }
-boasVindas('Aluno');
+boasVindas('Gleidson');
+boasVindas('Márcio');
+boasVindas('Alessandro');
+boasVindas('Sarah');
