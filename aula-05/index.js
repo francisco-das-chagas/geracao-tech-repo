@@ -10,7 +10,6 @@ let pessoa = {
     rosto: {
       olhos: 'Azuis',
       cabelo: true,
-      
     }
 } 
 
