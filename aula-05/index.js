@@ -6,9 +6,17 @@ let pessoa = {
     habilidades: ['HTML', 'CSS', 'Javascript', 'React'],
     andar: function outroNome () {
       console.log('Andei');
+    },
+    rosto: {
+      olhos: 'Azuis',
+      cabelo: true,
+      
     }
 } 
 
-let subtrair = function () {
-  console.log('subtrair');
+let subtrair = function () {}
+let multiplicar = (a, b) => {
+  return a * b
+
 }
+
