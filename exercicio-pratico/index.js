@@ -1,12 +1,16 @@
-let nome = "Jon";
-let nome1 = "Marco";
-let nome2 = "Lucas";
-let nome3 = "Caio";
 
-let nomes = ["Jon", "Marco", "Lucas", "Caio"];
-let numeros = [1,2,3,4,5];
+let meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+   ]
 
-for (let i = 0; i < numeros.length; i++) {
-  numeros[i] += 1;
-  console.log('voltas: ', i);
+
+for (let d = 1; d < 32; d++) {
+  dia.innerHTML += `<option>${d}</option>`
+}
+
+for (let m = 0; m < 12; m++){
+  mes.innerHTML += `<option>${meses[m]}</option>`
+}
+
+for (let a = 2024; a > 1973; a--) {
+  ano.innerHTML += `<option>${ano[a]}</option>`
 }
