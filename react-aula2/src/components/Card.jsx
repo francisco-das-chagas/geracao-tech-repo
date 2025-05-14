@@ -1,10 +1,10 @@
-const Card = () => {
+const Card = (title, category, paragraph) => {
   return ( 
-    <>
-      <h2>Titulo do Card</h2>
-      <h6>Categoria</h6>
-      <p>Um paragrafo</p>
-    </>
+    <div style={{border: "1px solid black"}}>
+      <h2>{title}</h2>
+      <h6>{category}</h6>
+      <p>{paragraph}</p>
+    </div>
    );
 }
  
