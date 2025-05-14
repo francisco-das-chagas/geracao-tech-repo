@@ -13,6 +13,7 @@ const App = () => {
       <Componente2 /> */}
       <FormaDeBolo sabor = "laranja" cobertura = "Morango" />
       <FormaDeBolo sabor = "Chocolate" cobertura = "Chantily" />
+      <FormaDeBolo sabor = "frango" cobertura = "xadrez" />
     </>
    );
 }
