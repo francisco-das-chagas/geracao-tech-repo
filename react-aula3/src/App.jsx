@@ -4,7 +4,7 @@ import Input from "./components/Input";
 const App = () => {
   return (
     <>
-      <Button />
+      {/* <Button /> */}
       <Input />
     </>
   );

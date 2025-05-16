@@ -1,5 +1,5 @@
 import { useState } from "react";
-s
+
 const Button = () => {
   const [contador, setContador] = useState(0)
 

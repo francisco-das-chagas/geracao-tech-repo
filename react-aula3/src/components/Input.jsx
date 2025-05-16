@@ -1,17 +1,22 @@
+import { useRef, useState } from "react";
+
 const Input = () => {
-  function mostrarNome() {
-    console.log(nome.value);
-  }
-  return (
+    // const [nome, setNome] = useState("");
+    const nome = useRef("")
+    console.log("Re-Redenrizou");
+  return ( 
     <>
       <input 
         type="text" 
-        id="nome"   
-        placeholder="Digite seu Nome"
+        placeholder="Digite seu nome"
+        // onChange={(e) => nome.current = e.target.value}
+        ref={nome}
       />
-      <button onClick={mostrarNome}>Mostrar</button>
+      <button onClick={() => console.log(nome.current.value)}> mostrar </button>
+      <h1>{nome.current}</h1>
     </>
-  );
-};
 
+   );
+}
+ 
 export default Input;
