@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const App = () => {
     const [count, setCount] = useState(0);
+    const [count2, setCount2] = useState(0)
 
     function boasVindas() {
       alert('Boas vindas')
@@ -17,6 +18,10 @@ const App = () => {
       console.log('useEffect que é chamado somente uma vez');
     }, [])
 
+    useEffect(() => {
+      console.log(`useEffect ativado somente por depedencias`);
+    }, [count])
+
     return (
     <>
       <h1>Olá mundo</h1>
@@ -24,6 +29,9 @@ const App = () => {
     
       <h2>Contador: {count}</h2>
       <button onClick={() => setCount(count + 1)}>add</button>
+
+      <h2>Contador: {count2}</h2>
+      <button onClick={() => setCount2(count2 + 1)}>add</button>
     </>
   );
 }
