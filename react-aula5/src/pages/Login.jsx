@@ -2,11 +2,13 @@ import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import { IconField } from 'primereact/iconfield';
 import { InputIcon } from 'primereact/inputicon';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
 
 const Login = () => {
   return ( 
     <>
-        <div>
+        <div className='bg-primary-500 h-screen flex'>
           <form>
             <h3>Seja Bem-vindo</h3>
             <label htmlFor="email">Email</label>
@@ -26,7 +28,6 @@ const Login = () => {
               label="Entrar"
               type='submit'
             />
-
           </form>
         </div>
     </>
