@@ -1,14 +1,13 @@
 import "primereact/resources/themes/mdc-light-deeppurple/theme.css"
 import "primeflex/primeflex.css";
 import "primeicons/primeicons.css";
-
-import { Button } from 'primereact/button';
+import Paths from "./routes/Paths";
  
 
 const App = () => {
   return ( 
     <>
-    <Button label="Submit" />
+    <Paths/>
     </>
    );
 }
