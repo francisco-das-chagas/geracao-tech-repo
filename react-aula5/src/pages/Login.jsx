@@ -8,7 +8,7 @@ import 'primeicons/primeicons.css';
 const Login = () => {
   return ( 
     <>
-        <div className='bg-primary-500 h-screen flex'>
+        <div>
           <form>
             <h3>Seja Bem-vindo</h3>
             <label htmlFor="email">Email</label>
